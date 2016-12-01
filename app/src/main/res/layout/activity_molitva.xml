@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/molitvaTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title3"
+        android:textSize="25dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.42"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ScrollView
+        android:id="@+id/molitvaScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/molitvaTitleView">
+
+
+    <TextView
+        android:id="@+id/molitvaContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="17dp"
+        android:text="@string/molitva3"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </ScrollView>
+
+</RelativeLayout>
